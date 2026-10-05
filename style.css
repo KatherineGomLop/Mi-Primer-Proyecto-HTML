@@ -1,0 +1,151 @@
+/*
+  Este archivo CSS hace que la página se vea bonita.
+  CSS significa Cascading Style Sheets.
+  Es como vestir a la página con colores, tamaños y espacios.
+*/
+
+:root {
+  --azul: #4f46e5;
+  --azul-claro: #eef2ff;
+  --naranja: #f59e0b;
+  --texto: #1f2937;
+  --blanco: #ffffff;
+  --gris-claro: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+  color: var(--texto);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--azul), #7c3aed);
+  color: var(--blanco);
+  padding: 40px 20px 60px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+button {
+  background: var(--naranja);
+  color: var(--blanco);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.seccion {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.seccion h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--azul);
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.especial {
+  background: var(--azul-claro);
+  border-radius: 20px;
+}
+
+ul {
+  list-style: square;
+  margin-left: 25px;
+}
+
+.formulario {
+  background: var(--gris-claro);
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.mensaje {
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--azul);
+}
+
+.footer {
+  background: #1f2937;
+  color: var(--blanco);
+  text-align: center;
+  padding: 25px;
+}
